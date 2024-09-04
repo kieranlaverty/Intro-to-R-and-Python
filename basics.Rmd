@@ -1,0 +1,15 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+ 
+ 
+The help function if you are unsure of what annoy other function will give the documentation and an explanation
+
+```{r}
+#example
+help("library")
+
+```
+
+
