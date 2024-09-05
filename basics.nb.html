@@ -1762,9 +1762,40 @@ give the documentation and an explanation</p>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
+<p>Using the library function you can load up package into your
+notebook</p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubGlicmFyeSh0aWR5dmVyc2UpXG5cblxuYGBgIn0= -->
+<pre class="r"><code>library(tidyverse)
+</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+<p>Importing “Shop Customer Data” dataset</p>
+<p>The csv can be found at <a href="https://www.kaggle.com/datasets/datascientistanna/customers-dataset?resource=download" class="uri">https://www.kaggle.com/datasets/datascientistanna/customers-dataset?resource=download</a></p>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc2hvcF9DdXN0b21lciA8LSByZWFkX2NzdihcIkN1c3RvbWVycy5jc3ZcIiwgc2hvd19jb2xfdHlwZXMgPSBGQUxTRSlcblxuaGVhZChzaG9wX0N1c3RvbWVyKVxuYGBgIn0= -->
+<pre class="r"><code>shop_Customer &lt;- read_csv(&quot;Customers.csv&quot;, show_col_types = FALSE)
+
+head(shop_Customer)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbInRibF9kZiIsInRibCIsImRhdGEuZnJhbWUiXSwibnJvdyI6NiwibmNvbCI6OCwic3VtbWFyeSI6eyJBIHRpYmJsZSI6WyI2IMOXIDgiXX19LCJyZGYiOiJINHNJQUFBQUFBQUFCcFZTVFcvVE1CaDIyelRMZ3JvUERRSEhIRGpBb2RYR3hzZHRxZFlXSmcwSnJVUHNhbEt2czViWWtlT3lqUk8vZ0grRytBMXc1c0NCRTRjRkozN2ZpR1Rsd0N0Wnovdmh4MzRmK3owZW5lNzZwejRocEVNY3AwVTZYZU9TN3R1VFNmOEZJVTdiQkMzaWtOVUNyOHltTGVONFpxMlo1ZTcvSktXRkJOQUQzQUM4Qy9pQW9CVVZGdzUwWHRPWUxmSGRDVXYrTDRKK3dsMjQ3eW5nSHVCendIM0FaMVUvbHZmbHlPYS8zYmY0SzdmNDQ2dkY3NThoUHE3ekRqN1ovRWxZMHhsT0lSNWh2RlMvLzRyUldKOUhWS0VlYnl6bVhEQ20vaEc3Ui9UeXVvcDZZNkdaMHBTTGhBbU5XNFpLODB6ZitpTDRHb3pSUW5MTHJMU041VHpjWDBtdGFMVlo2UXFhc0F6MGVxajNZSkZwbVRCMU9NSm1Yekl4cS9SMGhuTjhpTTJoRUFzYUI0Y2lNb1RnMGNQSFVMZzNUUTJGaTNrd2phUXlsWjMrenZZMlZ2MDNTcDZ4TE9OU1FHYjluVlFYd2ZncVpZb3pFZUg1ZHlZMDRmRjFNT1VmV2FQMVZTVXZCOWgrejZ4MjhjbDVudjl1YW94aW1xRkdUUG96cXVuZ1RCbStpVzRhbEJXWmF0T2JJYlczeWtHb2sxdXFrVmhmaUtLVFdUODZYNGlML3BOR3VaT0tlWEZubWJMV0E5Lzl5L2RzRisyYzFPZlBaZVYwb1p5WXZtY3huanhqSDhCZE0rOVJQc2NnVmJ3YU05OWtzNEdXbWlMRmoyU01tVkk1dWZrRFVUNmJ1MTBFQUFBPSJ9 -->
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["CustomerID"],"name":[1],"type":["dbl"],"align":["right"]},{"label":["Gender"],"name":[2],"type":["chr"],"align":["left"]},{"label":["Age"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["Annual Income ($)"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["Spending Score (1-100)"],"name":[5],"type":["dbl"],"align":["right"]},{"label":["Profession"],"name":[6],"type":["chr"],"align":["left"]},{"label":["Work Experience"],"name":[7],"type":["dbl"],"align":["right"]},{"label":["Family Size"],"name":[8],"type":["dbl"],"align":["right"]}],"data":[{"1":"1","2":"Male","3":"19","4":"15000","5":"39","6":"Healthcare","7":"1","8":"4"},{"1":"2","2":"Male","3":"21","4":"35000","5":"81","6":"Engineer","7":"3","8":"3"},{"1":"3","2":"Female","3":"20","4":"86000","5":"6","6":"Engineer","7":"1","8":"1"},{"1":"4","2":"Female","3":"23","4":"59000","5":"77","6":"Lawyer","7":"0","8":"2"},{"1":"5","2":"Female","3":"31","4":"38000","5":"40","6":"Entertainment","7":"2","8":"6"},{"1":"6","2":"Female","3":"22","4":"58000","5":"76","6":"Artist","7":"0","8":"2"}],"options":{"columns":{"min":{},"max":[10],"total":[8]},"rows":{"min":[10],"max":[10],"total":[6]},"pages":{}}}
+  </script>
+</div>
+<!-- rnb-frame-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuTkFcbmBgYCJ9 -->
+<pre class="r"><code>NA</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
 <!-- rnb-text-end -->
 
-<div id="rmd-source-code">LS0tDQp0aXRsZTogIlIgTm90ZWJvb2siDQpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sNCi0tLQ0KIA0KIA0KVGhlIGhlbHAgZnVuY3Rpb24gaWYgeW91IGFyZSB1bnN1cmUgb2Ygd2hhdCBhbm5veSBvdGhlciBmdW5jdGlvbiB3aWxsIGdpdmUgdGhlIGRvY3VtZW50YXRpb24gYW5kIGFuIGV4cGxhbmF0aW9uDQoNCmBgYHtyfQ0KI2V4YW1wbGUNCmhlbHAoImxpYnJhcnkiKQ0KDQpgYGANCg0KDQo=</div>
+<div id="rmd-source-code">LS0tDQp0aXRsZTogIlIgTm90ZWJvb2siDQpvdXRwdXQ6IGh0bWxfbm90ZWJvb2sNCi0tLQ0KIA0KIA0KVGhlIGhlbHAgZnVuY3Rpb24gaWYgeW91IGFyZSB1bnN1cmUgb2Ygd2hhdCBhbm5veSBvdGhlciBmdW5jdGlvbiB3aWxsIGdpdmUgdGhlIA0KZG9jdW1lbnRhdGlvbiBhbmQgYW4gZXhwbGFuYXRpb24NCg0KYGBge3J9DQojZXhhbXBsZQ0KaGVscCgibGlicmFyeSIpDQoNCmBgYA0KDQoNClVzaW5nIHRoZSBsaWJyYXJ5IGZ1bmN0aW9uIHlvdSBjYW4gbG9hZCB1cCBwYWNrYWdlIGludG8geW91ciBub3RlYm9vaw0KYGBge3J9DQpsaWJyYXJ5KHRpZHl2ZXJzZSkNCg0KDQpgYGANCg0KDQoNCkltcG9ydGluZyAiU2hvcCBDdXN0b21lciBEYXRhIiBkYXRhc2V0DQoNClRoZSBjc3YgY2FuIGJlIGZvdW5kIGF0DQpodHRwczovL3d3dy5rYWdnbGUuY29tL2RhdGFzZXRzL2RhdGFzY2llbnRpc3Rhbm5hL2N1c3RvbWVycy1kYXRhc2V0P3Jlc291cmNlPWRvd25sb2FkDQoNCg0KYGBge3J9DQpzaG9wX0N1c3RvbWVyIDwtIHJlYWRfY3N2KCJDdXN0b21lcnMuY3N2Iiwgc2hvd19jb2xfdHlwZXMgPSBGQUxTRSkNCg0KaGVhZChzaG9wX0N1c3RvbWVyKQ0KDQpgYGANCg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0K</div>
 
 
 

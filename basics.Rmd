@@ -4,12 +4,47 @@ output: html_notebook
 ---
  
  
-The help function if you are unsure of what annoy other function will give the documentation and an explanation
+The help function if you are unsure of what annoy other function will give the 
+documentation and an explanation
 
 ```{r}
 #example
 help("library")
 
 ```
+
+
+Using the library function you can load up package into your notebook
+```{r}
+library(tidyverse)
+
+
+```
+
+
+
+Importing "Shop Customer Data" dataset
+
+The csv can be found at
+https://www.kaggle.com/datasets/datascientistanna/customers-dataset?resource=download
+
+
+```{r}
+shop_Customer <- read_csv("Customers.csv", show_col_types = FALSE)
+
+head(shop_Customer)
+
+```
+
+
+
+
+
+
+
+
+
+
+
 
 
