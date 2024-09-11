@@ -17,6 +17,7 @@ help("library")
 Using the library function you can load up package into your notebook
 ```{r}
 library(tidyverse)
+library(esquisse)
 
 
 ```
@@ -37,10 +38,32 @@ head(shop_Customer)
 ```
 
 
+This is a method of making graph that gives a nice UI
+
+```{r}
+
+esquisser(shop_Customer)
+
+```
 
 
 
+A second method is to create the code using ggplot.
 
+```{r}
+ggplot(shop_Customer) +
+  aes(
+    x = CustomerID,
+    y = Age,
+    colour = Profession,
+    size = `Spending Score (1-100)`
+  ) +
+  geom_point(shape = "triangle") +
+  scale_color_brewer(palette = "YlOrRd", direction = 1) +
+  theme_minimal()
+
+
+```
 
 
 
